@@ -1,0 +1,1 @@
+second_smallest6second_largest:7
