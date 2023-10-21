@@ -40,6 +40,12 @@ vector<int> getSecondOrderElements(int n, vector<int> a) {
     cout<<"second_largest:"<<second_largest;
 
 }
+// vector<int> getSecondOrderElements(int n, vector<int> a) {
+//     //Using single traversal
+//     int small=Max;int second_small=Max;
+//     int large=Min;int second_large=Min;
+
+// }
 int main(){
     int n;
     cin>>n;
