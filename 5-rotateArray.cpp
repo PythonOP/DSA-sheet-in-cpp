@@ -30,6 +30,16 @@ vector<int> rotateArray(vector<int>& arr, int n) {
     // for(auto it:arr)   cout<<it<<" ";
     return arr;
 }
+// vector<int> rotateArray(vector<int>arr, int k) {
+//     // similar problem where k is the number of rotates
+//     int n=arr.size();
+//     for(int l=0;l<k;l++){
+//         int firstValue = arr[0];
+//         for(int i=0;i<n-1;i++)  arr[i] = arr[i+1];
+//         arr[n-1] = firstValue;
+//     }
+//     return arr;
+// }
 int main(){
     int n;
     cin>>n;
