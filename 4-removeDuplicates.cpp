@@ -5,7 +5,7 @@
 using namespace std;
 
 int removeDuplicates(vector<int> &arr, int n) {
-	// Brute force approach - Inital 
+	// Brute force approach - Initial 
     /* Note: Traverse from behind because modifying the vector while 
              iterating though leads to some incorrect behaviour.
     */
