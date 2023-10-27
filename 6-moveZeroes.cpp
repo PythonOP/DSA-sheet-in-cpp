@@ -47,6 +47,6 @@ int main(){
     for(auto it:res)    cout<<it<<" ";
     // cout<<"Test";
 }
-// Left Rotate the Array by One
+// move zeroes
 // https://www.codingninjas.com/studio/problems/left-rotate-an-array-by-one_5026278
 // Leetcode link (morderate problem): https://leetcode.com/problems/rotate-array/solutions/3506340/beats-100-3-line-solution-fully-most-optimised-code/
