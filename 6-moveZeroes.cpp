@@ -1,18 +1,38 @@
-#include<iostream>
-#include<vector>
-#include<algorithm>
-#include<limits.h>
+#include<bits/stdc++.h>
 using namespace std;
 // Example 1:
 // Input: 1 ,0 ,2 ,3 ,0 ,4 ,0 ,1
 // Output: 1 ,2 ,3 ,4 ,1 ,0 ,0 ,0
 // Explanation: All the zeros are moved to the end and non-negative integers are moved to front by maintaining order
-vector<int> moveZeros(int n, vector<int> a) {
-    // Brute force approach - Initial
-    for(int i=n-1;i>0;i--){
-        if(a[i-1] == 0){
-            a.erase(a.begin()+(i-1));
-            a.push_back(0);
+// vector<int> moveZeros(int n, vector<int> a) {
+//     // Brute force approach - Initial
+//     for(int i=n-1;i>0;i--){
+//         if(a[i-1] == 0){
+//             a.erase(a.begin()+(i-1));
+//             a.push_back(0);
+//         }
+//     }
+//     return a;
+// }
+vector<int> moveZeros(int n, vector<int> a){
+    // Optimal approach
+    // 2 pointers - i j
+    int j=-1;
+    // point j to the first 0
+    for(int i=0;i<n;i++){
+        if(a[i]==0){
+            j = i;
+            break;
+        }
+    }
+    // all non-zero elements
+    if(j==-1)   return a;
+
+    // point i to next index j and start loop
+    for(int i=j+1;i<n;i++){
+        if(a[i]!=0){
+            swap(a[i],a[j]);
+            j++;
         }
     }
     return a;
