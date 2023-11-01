@@ -39,6 +39,7 @@ public:
         // sort(nums.begin()+k,nums.end());
 
         k = k % n; //if k>=n
+        
         reverse(nums.begin(),nums.end());
         reverse(nums.begin(),nums.begin()+k);
         reverse(nums.begin()+k,nums.end());
