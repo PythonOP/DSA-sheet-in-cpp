@@ -12,11 +12,11 @@ int repeatingEle(vector<int> a){
     return -1;
 }
 int main(){
-    int n;
-    cin>>n;
-    vector<int> a(n);
-    for(int i=0;i<n;i++)    cin>>a[i];
-    for(int i=0;i<n;i++)    cout<<a[i];
-    cout<<"\nRepeating Element:"<<repeatingEle(a);
+    // int n;
+    // cin>>n;
+    // vector<int> a(n);
+    // for(int i=0;i<n;i++)    cin>>a[i];
+    // for(int i=0;i<n;i++)    cout<<a[i];
+    // cout<<"\nRepeating Element:"<<repeatingEle(a);
 }
 // Find the first repeating element in an array of integers
