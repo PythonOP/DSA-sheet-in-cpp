@@ -14,6 +14,7 @@ vector<int> superiorElements(vector<int>&a) {
         }
         if(superior)    ans.push_back(a[i]);
     }
+    
     sort(ans.begin(),ans.end());
     return ans;
 }
