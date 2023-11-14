@@ -2,6 +2,9 @@
 using namespace std;
 class Solution {
 public:
+    // Optimal solution using 2 pointers
+    // isalnum,isalpha, isdigit
+    // tolower, toupper
     bool isPalindrome(string s) {
         int i=0;
         int j=s.size()-1;
